@@ -7,30 +7,35 @@ export const routes = [
   {
     path: '/about-us',
     component: () => import('../views/AboutUs'),
+    name: '关于我们',
     meta: { title: '关于我们' },
     hidden: true
   },
   {
     path: '/avoid-fakes',
     component: () => import('../views/AvoidFakes'),
+    name: '如何避免买到假货',
     meta: { title: '如何避免买到假货' },
     hidden: true
   },
   {
     path: '/contact-us',
     component: () => import('../views/ContactUs'),
+    name: '联系我们',
     meta: { title: '联系我们' },
     hidden: true
   },
   {
     path: '/comparison',
     component: () => import('../views/Comparison'),
+    name: '真假百科全书',
     meta: { title: '真假百科全书' },
     hidden: true
   },
   {
     path: '/launch',
     component: () => import('../views/Launch'),
+    name: '启动页',
     meta: { title: '启动页' },
     hidden: true
   }

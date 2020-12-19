@@ -1,14 +1,15 @@
 export default {
   navbar: {
-    home: 'Home',
+    home: '首页',
+    encyclopediaText: '真假百科全书',
     encyclopedia: {
-      encyclopediaList: 'Encyclopedia List',
-      cabinFilter: 'Cabin Filter',
-      oilFilter: 'Oil Filter',
-      energyOil: 'Energy Oil',
-      sparkingPlug: 'Sparking Plug',
-      brakePad: 'Brake Pad',
-      airbag: 'Airbag'
+      encyclopediaList: '百科列表',
+      cabinFilter: '空调滤清器',
+      oilFilter: '机油滤清器',
+      energyOil: '机油',
+      sparkingPlug: '火花塞',
+      brakePad: '刹车片',
+      airbag: '安全气囊'
     }
   },
   aboutUs: {
@@ -35,7 +36,12 @@ export default {
       '4s店取得联系，⼤众集团的员⼯将对您的信息予以保密。'
   },
   avoidFakes: {
-
+    cabinFilter: '空调滤清器',
+    oilFilter: '机油滤清器',
+    energyOil: '机油',
+    sparkingPlug: '火花塞',
+    brakePad: '刹车片',
+    airbag: '安全气囊'
   },
   comparison: {
 

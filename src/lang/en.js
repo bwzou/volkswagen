@@ -1,6 +1,7 @@
 export default {
   navbar: {
     home: 'Home',
+    encyclopediaText: 'Encyclopedia',
     encyclopedia: {
       encyclopediaList: 'Encyclopedia List',
       cabinFilter: 'Cabin Filter',
@@ -58,6 +59,7 @@ export default {
     language: '中',
     aboutUs: 'About us',
     contactUs: 'Contact us',
-    encyclopedia: 'Encyclopedia'
+    encyclopedia: 'Encyclopedia',
+    counterfeits: 'How to avoid counterfeits',
   }
 }
