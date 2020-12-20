@@ -8,13 +8,13 @@
                     <b-navbar-nav>
                         <b-nav-item href="#">{{$t("navbar.home")}}</b-nav-item>
                         <b-nav-item-dropdown :text="lang==='zh' ? '真假百科全书' : 'Encyclopedia'" right>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.encyclopediaList")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.cabinFilter")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.oilFilter")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.energyOil")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.sparkingPlug")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.brakePad")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.airbag")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.encyclopediaList")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.cabinFilter")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.oilFilter")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.energyOil")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.sparkingPlug")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.brakePad")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.airbag")}}</b-dropdown-item>
                         </b-nav-item-dropdown>
                     </b-navbar-nav>
                 </b-collapse>
@@ -28,7 +28,7 @@
                 <div class="line">
                     {{$t("navbar.encyclopedia.cabinFilter")}}
                 </div>
-                <div class="line">
+                <div class="line" @click="handleChange('/oil-filter', 2)">
                     {{$t("navbar.encyclopedia.oilFilter")}}
                 </div>
                 <div class="line">
@@ -110,6 +110,9 @@
       },
       handleClick(item) {
         console.log(item)
+        if(this.$route.path !== item) {
+          this.$router.push(item)
+        }
       }
     }
   }

@@ -44,7 +44,37 @@ export default {
     airbag: '安全气囊'
   },
   comparison: {
-
+    oilFilter: {
+      title: '机油滤清器',
+      content: '机油滤清器位于发动机润滑系统中，是最为常用且重要的保养更换零件之一，它的作用是针对来自油底壳的机油中有害杂质进行滤除，' +
+        '以洁净的机油供给曲轴、连杆、凸轮轴、增压器、活塞环等运动零件，起到润滑、冷却、清洗作用，从而延长这些零部件的寿命。',
+      housingGenuine: '外壳-正品',
+      housingGenuineContent: '原厂优质的滤清器使用高品质的金属外壳，能有效防止在不同压力峰值下出现外壳爆裂现象。',
+      HousingCounterfeits: '外壳-假冒',
+      HousingCounterfeitsContent: '假冒品使用劣质外壳材料，厚度不够，在高速行车过程中的高压状态下容易导致爆裂和机油泄漏，' +
+        '并可能引发严重交通事故。',
+      bypassValveGenuine: '旁通阀-正品',
+      bypassValveGenuineContent: '原厂优质的旁通阀使用高品质的止回阀和旁通阀能够在所有温度下可靠运行，保证发动机的正常运作。',
+      bypassValveCounterfeits: '旁通阀-假冒',
+      bypassValveCounterfeitsContent: '假冒品的止回阀和溢流阀技术不过关，极易造成发动机在无任何润滑的情况下运行，从而导致发动机严重受损。',
+      filterPaperGenuine: '滤纸-正品',
+      filterPaperGenuineContent: '原厂优质的滤清器使用高品质的滤纸，能够在剧烈的温度变化下，过滤杂质，同时保证足够的流量，最大限度的降低发动机的磨损。' ,
+      filterPaperCounterfeits: '滤纸-假冒',
+      filterPaperCounterfeitsContent: '假冒品往往使用劣质滤材，工艺粗糙，容污能力低，无法达到合格的过滤效果。',
+      sealGenuine: '密封圈-正品',
+      sealGenuineContent: '原厂优质的滤清器使用高品质的密封圈，保证在任何恶劣的行车环境下都能做到100%密封不漏油。',
+      sealCounterfeits: '密封圈-假冒',
+      sealCounterfeitsContent: '假冒品使用劣质的密封材料，过高或过低的行车环境温度都容易造成材质变形，进而导致机油泄漏。',
+      hazards: 'Hazards of Using Counterfeits',
+      hazards1: '①Damaging engine components',
+      hazards2: '②Causing spontaneous combustion',
+      hazards3: '③Incurring severe traffic accidents',
+      hazards4: '④Harming drivers and passengers health',
+      hazards5: '⑤Raising maintenance costs',
+      hazards6: '⑥Reducing car lifespan',
+      hazards7: '⑦Increasing pollutant emission',
+      save: 'Safe Drive. Joy Ride.'
+    }
   },
   contactUs: {
 

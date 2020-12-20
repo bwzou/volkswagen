@@ -50,7 +50,47 @@ export default {
 
   },
   comparison: {
-
+    oilFilter: {
+      title: 'Oil filter',
+      content: 'Oil filters, found in engine lubrication systems, are among the most often replaced crucial' +
+        ' maintenance parts. They help remove contaminants from engine oil in the oil pan. In this way, clean ' +
+        'oil can be circulated to moving parts such as crankshafts, connecting rods, cramshafts, turbochargers,' +
+        ' pistons, etc., serving the purpose of lubricating, cooling and cleansing, thus improving the service ' +
+        'life of these parts.',
+      housingGenuine: 'Housing-Genuine OEM Parts',
+      housingGenuineContent: 'The genuine OEM oil filters use high-quality metal housings, effectively preventing ' +
+        'burst under different pressure peaks.',
+      HousingCounterfeits: 'Housing-Counterfeits',
+      HousingCounterfeitsContent: 'Fake oil filters use poor housing materials, which are not thick enough to endure ' +
+        'the pressure during fast-speed driving, resulting in burst and leakage, and inducing serious accidents.',
+      bypassValveGenuine: 'Bypass Valve-Genuine OEM Parts',
+      bypassValveGenuineContent: 'Fake oil filters use inferior check valves and relief valves that can easily lead to ' +
+        'lubrication-absent engine operation and bring severe damage to engines.',
+      bypassValveCounterfeits: 'Bypass Valve-Counterfeits',
+      bypassValveCounterfeitsContent: 'Fake oil filters use inferior check valves and relief valves that can easily lead ' +
+        'to lubrication-absent engine operation and bring severe damage to engines.',
+      filterPaperGenuine: 'Filter Paper-Genuine OEM Parts',
+      filterPaperGenuineContent: 'The genuine OEM oil filters use fine filter paper that can filter out impurities under ' +
+        'dramatic temperature fluctuations while maintaining adequate circulation to minimize engine wear.' ,
+      filterPaperCounterfeits: 'Filter Paper-Counterfeits',
+      filterPaperCounterfeitsContent: 'Fake oil filters use shoddy filter materials that are rough and of low impurity ' +
+        'absorbing capacity. They can’t meet the filtering standard and will cause oil leakage.',
+      sealGenuine: 'Seal-Genuine OEM Parts',
+      sealGenuineContent: 'The genuine OEM oil filters use first-rate seals that provide 100% airtight and leakproof guarantee' +
+        ' despite all kinds of harsh driving circumstances.',
+      sealCounterfeits: 'Seal-Counterfeits',
+      sealCounterfeitsContent: 'Fake oil filters use crappy sealing materials that will be easily deformed under a driving ' +
+        'environment that is either too hot or too cold and invite oil leakage.',
+      hazards: 'Hazards of Using Counterfeits',
+      hazards1: '①Damaging engine components',
+      hazards2: '②Causing spontaneous combustion',
+      hazards3: '③Incurring severe traffic accidents',
+      hazards4: '④Harming drivers and passengers health',
+      hazards5: '⑤Raising maintenance costs',
+      hazards6: '⑥Reducing car lifespan',
+      hazards7: '⑦Increasing pollutant emission',
+      save: 'Safe Drive. Joy Ride.'
+    }
   },
   contactUs: {
 

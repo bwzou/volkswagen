@@ -22,13 +22,13 @@
                     <b-navbar-nav>
                         <b-nav-item href="#">{{$t("navbar.home")}}</b-nav-item>
                         <b-nav-item-dropdown :text="lang==='zh' ? '真假百科全书' : 'Encyclopedia'" right>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.encyclopediaList")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.cabinFilter")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.oilFilter")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.energyOil")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.sparkingPlug")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.brakePad")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick">{{$t("navbar.encyclopedia.airbag")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.encyclopediaList")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.cabinFilter")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.oilFilter")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.energyOil")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.sparkingPlug")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.brakePad")}}</b-dropdown-item>
+                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.airbag")}}</b-dropdown-item>
                         </b-nav-item-dropdown>
 <!--                        <b-nav-item-dropdown text="简体中文" right>-->
 <!--                            <b-dropdown-item href="#">简体中文</b-dropdown-item>-->
@@ -40,7 +40,7 @@
             <div class="header">
                 <div class="title">VOLKSWAGEN</div>
                 <div class="footer">GROUP CHINA</div>
-                <div class="language" @click="handleLanguage">EN</div>
+                <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : '中'}}</div>
             </div>
             <div class="content">
                 <div class="line half1" @click="handleChange('/about-us', 1)">
@@ -135,6 +135,9 @@
       },
       handleClick(item) {
         console.log(item)
+        if(this.$route.path !== item) {
+          this.$router.push(item)
+        }
       }
     }
   }

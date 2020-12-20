@@ -33,6 +33,13 @@ export const routes = [
     hidden: true
   },
   {
+    path: '/oil-filter',
+    component: () => import('../views/comparison/OilFilter'),
+    name: '机油滤清器',
+    meta: { title: '机油滤清器' },
+    hidden: true
+  },
+  {
     path: '/launch',
     component: () => import('../views/Launch'),
     name: '启动页',
