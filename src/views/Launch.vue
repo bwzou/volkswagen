@@ -15,32 +15,11 @@
             <div class="counter">浏览{{time}}</div>
         </div>
         <div v-if="time===0" class="launch-content">
-            <b-navbar toggleable="true" fixed="top" type="light">
-                <b-navbar-toggle target="nav-collapse" @click="handleToggle"></b-navbar-toggle>
-
-                <b-collapse id="nav-collapse" is-nav>
-                    <b-navbar-nav>
-                        <b-nav-item href="#">{{$t("navbar.home")}}</b-nav-item>
-                        <b-nav-item-dropdown :text="lang==='zh' ? '真假百科全书' : 'Encyclopedia'" right>
-                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.encyclopediaList")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.cabinFilter")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.oilFilter")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.energyOil")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.sparkingPlug")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.brakePad")}}</b-dropdown-item>
-                            <b-dropdown-item href="#" @click="handleClick('/comparison')">{{$t("navbar.encyclopedia.airbag")}}</b-dropdown-item>
-                        </b-nav-item-dropdown>
-<!--                        <b-nav-item-dropdown text="简体中文" right>-->
-<!--                            <b-dropdown-item href="#">简体中文</b-dropdown-item>-->
-<!--                            <b-dropdown-item href="#">English</b-dropdown-item>-->
-<!--                        </b-nav-item-dropdown>-->
-                    </b-navbar-nav>
-                </b-collapse>
-            </b-navbar>
+            <nav-bar></nav-bar>
             <div class="header">
                 <div class="title">VOLKSWAGEN</div>
-                <div class="footer">GROUP CHINA</div>
-                <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : '中'}}</div>
+                <div class="sub-title">GROUP CHINA</div>
+                <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
             </div>
             <div class="content">
                 <div class="line half1" @click="handleChange('/about-us', 1)">
@@ -48,7 +27,7 @@
                     {{$t("launch.aboutUs")}}
                 </div>
                 <div class="line half2" @click="handleChange('/contact-us', 3)">
-                    <img src="../assets/svg/contact0.svg">
+                    <img src="../assets/svg/call0.svg">
                     {{$t("launch.contactUs")}}
                 </div>
                 <div class="line" @click="handleChange('/comparison', 2)">
@@ -60,49 +39,41 @@
                     {{$t("launch.counterfeits")}}
                 </div>
             </div>
-            <div class="footer">
-                <div class="nav-button">
-                    <img v-if="!activeStatus||activeTab!==1" src="../assets/svg/home0.svg">
-                    <img v-if="activeStatus&&activeTab===1" src="../assets/svg/home1.svg">
-                </div>
-                <div class="nav-button">
-                    <img v-if="!activeStatus||activeTab!==2" src="../assets/svg/book0.svg">
-                    <img v-if="activeStatus&&activeTab===2" src="../assets/svg/book1.svg">
-                </div>
-                <div class="nav-button">
-                    <img v-if="!activeStatus||activeTab!==3" src="../assets/svg/call0.svg">
-                    <img v-if="activeStatus&&activeTab===3" src="../assets/svg/call1.svg">
-                </div>
-            </div>
+            <footer-nav class="footer"></footer-nav>
         </div>
     </div>
 </template>
 
 <script>
   import { mapGetters } from 'vuex'
+  import FooterNav from '../components/Footer/index'
 
   export default {
     name: "Launch",
+    components: {
+      FooterNav
+    },
     data() {
       return  {
-        time: 3,
         toggle: false
       }
     },
     computed: {
       ...mapGetters({
+        time: 'time',
         lang: 'lang',
         activeTab: 'activeTab',
         activeStatus: 'activeStatus'
       })
     },
     mounted() {
+      let t = this.time
       let func = () => {
         setTimeout(() => {
           if (this.time === 0) {
 
           } else {
-            this.time --
+            this.$store.dispatch('app/toggleTime', t--)
             func()
           }
         }, 1000)
@@ -110,10 +81,6 @@
       func()
     },
     methods: {
-      handleToggle() {
-        console.log('toggle')
-        this.toggle = !this.toggle
-      },
       handleChange(path, tab) {
         this.$store.dispatch('app/toggleActiveStatus', true)
         this.$store.dispatch('app/toggleActiveTab', tab)
@@ -132,12 +99,6 @@
           this.$store.dispatch('app/toggleLang', 'zh')
           localStorage.setItem('locale', 'zh')
         }
-      },
-      handleClick(item) {
-        console.log(item)
-        if(this.$route.path !== item) {
-          this.$router.push(item)
-        }
       }
     }
   }
@@ -155,13 +116,13 @@
 
 
         .header {
-            height: 130px;
+            height: 110px;
             color: rgb(78, 82, 84);
             background-color: #fff;
 
             .title {
                 padding-top: 40px;
-                font-size: 28px;
+                font-size: 24px;
                 font-weight: 500;
             }
 
@@ -171,7 +132,7 @@
         }
 
         .content {
-            height: calc(100vh - 130px);
+            height: calc(100vh - 110px);
             color: #fff;
             background-color: rgb(7, 33, 76);
 
@@ -214,14 +175,14 @@
         }
 
         .header {
-            height: 130px;
+            height: 110px;
             color: rgb(78, 82, 84);
             background-color: #fff;
             z-index: 10;
 
             .title {
                 padding-top: 40px;
-                font-size: 28px;
+                font-size: 24px;
                 font-weight: 500;
             }
 
@@ -233,60 +194,47 @@
                 position: absolute;
                 top: 45px;
                 right: 10px;
-                height: 35px;
-                width: 50px;
+                height: 30px;
+                width: 40px;
                 color: #fff;
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 600;
                 background-color: rgb(222, 84, 82);
             }
         }
 
         .content {
-            padding: 30px 20px;
-            height: calc(100vh - 210px);
+            padding: 30px 16px;
+            height: calc(100vh - 180px);
             overflow-y: auto;
             color: #000;
             background-color: rgb(7, 33, 76);
 
             .line {
                 margin-bottom: 20px;
-                padding: 30px 10px 30px 15px;
-                height: 100px;
-                font-size: 24px;
+                padding: 20px 10px 20px 15px;
+                height: 70px;
+                font-size: 20px;
                 text-align: left;
                 background-color: #fff;
 
                 img {
-                    height: 40px;
+                    height: 30px;
                     margin-right: 5px;
                 }
             }
 
             .half1 {
                 display: inline-block;
+                padding-right: 5px;
                 width: calc(50% - 10px);
-                margin-right: 20px;
+                margin-right: 10px;
             }
 
             .half2 {
                 display: inline-block;
-                width: calc(50% - 10px);
-            }
-        }
-
-        .footer {
-            height: 80px;
-            background-color: #fff;
-
-            .nav-button {
-                display: inline-block;
-                width: 33.3%;
-                padding: 15px;
-
-                img {
-                    height: 50px;
-                }
+                padding-right: 5px;
+                width: 50%;
             }
         }
     }

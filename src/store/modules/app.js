@@ -1,10 +1,14 @@
 const state = {
-  activeStatus: false,
-  activeTab: 0,
-  lang: 'zh'
+  time: 3,
+  activeStatus: true,
+  activeTab: 1,
+  lang: localStorage.getItem('locale') || 'zh'
 }
 
 const mutations = {
+  TOGGLE_TIME: (state, time) => {
+    state.time = time
+  },
   TOGGLE_ACTIVE_STATUS: (state, activeStatus) => {
     state.activeStatus = activeStatus
   },
@@ -17,6 +21,9 @@ const mutations = {
 }
 
 const actions = {
+  toggleTime({ commit }, time) {
+    commit('TOGGLE_TIME', time)
+  },
   toggleActiveStatus({ commit }, activeStatus) {
     commit('TOGGLE_ACTIVE_STATUS', activeStatus)
   },

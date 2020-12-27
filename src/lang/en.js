@@ -4,12 +4,12 @@ export default {
     encyclopediaText: 'Encyclopedia',
     encyclopedia: {
       encyclopediaList: 'Encyclopedia List',
-      cabinFilter: 'Cabin Filter',
       oilFilter: 'Oil Filter',
-      energyOil: 'Energy Oil',
+      cabinFilter: 'Cabin Filter',
+      airFilter: 'Air Filter',
       sparkingPlug: 'Sparking Plug',
       brakePad: 'Brake Pad',
-      airbag: 'Airbag'
+      pump: 'Pump'
     }
   },
   aboutUs: {
@@ -47,7 +47,12 @@ export default {
       'may reach out to a 4S dealership of our group. Your personal information will kept confidential.'
 },
   avoidFakes: {
-
+    oilFilter: 'Oil Filter',
+    cabinFilter: 'Cabin Filter',
+    airFilter: 'Air Filter',
+    sparkingPlug: 'Sparking Plug',
+    brakePad: 'Brake Pad',
+    pump: 'Pump'
   },
   comparison: {
     oilFilter: {
@@ -57,28 +62,28 @@ export default {
         'oil can be circulated to moving parts such as crankshafts, connecting rods, cramshafts, turbochargers,' +
         ' pistons, etc., serving the purpose of lubricating, cooling and cleansing, thus improving the service ' +
         'life of these parts.',
-      housingGenuine: 'Housing-Genuine OEM Parts',
+      housingGenuine: '1.Housing-Genuine OEM Parts',
       housingGenuineContent: 'The genuine OEM oil filters use high-quality metal housings, effectively preventing ' +
         'burst under different pressure peaks.',
-      HousingCounterfeits: 'Housing-Counterfeits',
+      HousingCounterfeits: '5.Housing-Counterfeits',
       HousingCounterfeitsContent: 'Fake oil filters use poor housing materials, which are not thick enough to endure ' +
         'the pressure during fast-speed driving, resulting in burst and leakage, and inducing serious accidents.',
-      bypassValveGenuine: 'Bypass Valve-Genuine OEM Parts',
+      bypassValveGenuine: '2.Bypass Valve-Genuine OEM Parts',
       bypassValveGenuineContent: 'Fake oil filters use inferior check valves and relief valves that can easily lead to ' +
         'lubrication-absent engine operation and bring severe damage to engines.',
-      bypassValveCounterfeits: 'Bypass Valve-Counterfeits',
+      bypassValveCounterfeits: '6.Bypass Valve-Counterfeits',
       bypassValveCounterfeitsContent: 'Fake oil filters use inferior check valves and relief valves that can easily lead ' +
         'to lubrication-absent engine operation and bring severe damage to engines.',
-      filterPaperGenuine: 'Filter Paper-Genuine OEM Parts',
+      filterPaperGenuine: '3.Filter Paper-Genuine OEM Parts',
       filterPaperGenuineContent: 'The genuine OEM oil filters use fine filter paper that can filter out impurities under ' +
         'dramatic temperature fluctuations while maintaining adequate circulation to minimize engine wear.' ,
-      filterPaperCounterfeits: 'Filter Paper-Counterfeits',
+      filterPaperCounterfeits: '7.Filter Paper-Counterfeits',
       filterPaperCounterfeitsContent: 'Fake oil filters use shoddy filter materials that are rough and of low impurity ' +
         'absorbing capacity. They can’t meet the filtering standard and will cause oil leakage.',
-      sealGenuine: 'Seal-Genuine OEM Parts',
+      sealGenuine: '4.Seal-Genuine OEM Parts',
       sealGenuineContent: 'The genuine OEM oil filters use first-rate seals that provide 100% airtight and leakproof guarantee' +
         ' despite all kinds of harsh driving circumstances.',
-      sealCounterfeits: 'Seal-Counterfeits',
+      sealCounterfeits: '8.Seal-Counterfeits',
       sealCounterfeitsContent: 'Fake oil filters use crappy sealing materials that will be easily deformed under a driving ' +
         'environment that is either too hot or too cold and invite oil leakage.',
       hazards: 'Hazards of Using Counterfeits',
