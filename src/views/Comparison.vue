@@ -11,37 +11,37 @@
                 <div class="line-input">
                     <b-form-input v-model="value" placeholder="Search..." @update="handleSearch"></b-form-input>
                 </div>
-                <div class="line" @click="handleChange('/oil-filter', 2)">
+                <div v-if="items['oilFilter'].show" class="line" @click="handleChange('/oil-filter', 2)">
                     <img src="../assets/part/oilFilter.png">
                     <div class="text">
                         {{$t("navbar.encyclopedia.oilFilter")}}
                     </div>
                 </div>
-                <div class="line" @click="handleChange('/cabin-filter', 2)">
+                <div v-if="items['cabinFilter'].show" class="line" @click="handleChange('/cabin-filter', 2)">
                     <img src="../assets/part/cabinFilter.png">
                     <div class="text">
                         {{$t("navbar.encyclopedia.cabinFilter")}}
                     </div>
                 </div>
-                <div class="line" @click="handleChange('/air-filter', 2)">
+                <div v-if="items['airFilter'].show" class="line" @click="handleChange('/air-filter', 2)">
                     <img src="../assets/part/airFilter.png">
                     <div class="text">
                         {{$t("navbar.encyclopedia.airFilter")}}
                     </div>
                 </div>
-                <div class="line" @click="handleChange('/fuel-filter', 2)">
+                <div v-if="items['fuelFilter'].show" class="line" @click="handleChange('/fuel-filter', 2)">
                     <img src="../assets/part/pump.png">
                     <div class="text">
                         {{$t("navbar.encyclopedia.fuelFilter")}}
                     </div>
                 </div>
-                <div class="line" @click="handleChange('/spark-plug', 2)">
+                <div v-if="items['sparkingPlug'].show" class="line" @click="handleChange('/spark-plug', 2)">
                     <img src="../assets/part/sparkingPlug.png">
                     <div class="text">
                         {{$t("navbar.encyclopedia.sparkingPlug")}}
                     </div>
                 </div>
-                <div class="line" @click="handleChange('/brake-pad', 2)">
+                <div v-if="items['brakePad'].show" class="line" @click="handleChange('/brake-pad', 2)">
                     <img src="../assets/part/brakePad.png">
                     <div class="text">
                         {{$t("navbar.encyclopedia.brakePad")}}
@@ -72,7 +72,15 @@
     },
     data() {
       return  {
-        value: ''
+        value: '',
+        items: {
+          oilFilter: { show: true, name},
+          cabinFilter: { show: true},
+          airFilter: { show: true},
+          fuelFilter: { show: true},
+          sparkingPlug: { show: true},
+          brakePad: { show: true},
+        }
       }
     },
     computed: {
@@ -94,7 +102,20 @@
         }
       },
       handleSearch() {
-        console.log(this.value)
+        if (this.value !== '') {
+          Object.keys(this.items).forEach(key => {
+            let mm = this.$t("navbar.encyclopedia." + key)
+            if (mm.indexOf(this.value) !== -1) {
+              this.items[key].show = true
+            } else {
+              this.items[key].show = false
+            }
+          })
+        } else {
+          Object.keys(this.items).forEach(key => {
+            this.items[key].show = true
+          })
+        }
       },
       handleLanguage() {
         let lang = localStorage.getItem('locale')
