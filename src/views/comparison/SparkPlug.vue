@@ -6,9 +6,9 @@
                     <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
                     {{$t("comparison.sparkPlug.title")}}
                 </div>
-                <div class="image">
-                    <img src="../../assets/oil-photo.png">
-                </div>
+<!--                <div class="image">-->
+<!--                    <img src="../../assets/oil-photo.png">-->
+<!--                </div>-->
                 <div class="content">
                     {{$t("comparison.sparkPlug.content")}}
                 </div>
@@ -67,10 +67,10 @@
                     </div>
                 </div>
             </div>
-            <div class="harm" v-if="lang==='zh'">
-                <img src="../../assets/harm.png">
-            </div>
-            <div class="section" v-if="lang==='en'">
+<!--            <div class="harm" v-if="lang==='zh'">-->
+<!--                <img src="../../assets/harm.png">-->
+<!--            </div>-->
+            <div class="section">
                 <div class="title">
                     {{$t("comparison.oilFilter.hazards")}}
                 </div>

@@ -4,13 +4,13 @@
             <div class="section">
                 <div class="title">
                     <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
-                    {{$t("comparison.airFilter.title")}}
+                    {{$t("comparison.cabinFilter.title")}}
                 </div>
-                <div class="image">
-                    <img src="../../assets/oil-photo.png">
-                </div>
+<!--                <div class="image">-->
+<!--                    <img src="../../assets/oil-photo.png">-->
+<!--                </div>-->
                 <div class="content">
-                    {{$t("comparison.airFilter.content")}}
+                    {{$t("comparison.cabinFilter.content")}}
                 </div>
             </div>
             <div class="section1">
@@ -103,10 +103,10 @@
                     </div>
                 </div>
             </div>
-            <div class="harm" v-if="lang==='zh'">
-                <img src="../../assets/harm.png">
-            </div>
-            <div class="section" v-if="lang==='en'">
+<!--            <div class="harm" v-if="lang==='zh'">-->
+<!--                <img src="../../assets/harm.png">-->
+<!--            </div>-->
+            <div class="section">
                 <div class="title">
                     {{$t("comparison.oilFilter.hazards")}}
                 </div>

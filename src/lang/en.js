@@ -191,7 +191,7 @@ export default {
       filterMediaGenuineContent: 'Volkswagen OEM fuel filters use imported sealants and multi-layer fiber filter element of which the features of erosion-resistance, uniform' +
         ' thickness and high fineness help effectively screen out the impurities and moisture and ensure the proper function of the fuel system and the engine.',
       filterMediaCounterfeits: '5.Filter Media-Counterfeits',
-      filterMediaCounterfeitsContent: '	Fake fuel filters use inferior filter materials that shed debris. The filter media can be punctured by the high-pressure fuel and the ' +
+      filterMediaCounterfeitsContent: 'Fake fuel filters use inferior filter materials that shed debris. The filter media can be punctured by the high-pressure fuel and the ' +
         'impurities will go through. Subsequently, the piping system can be blocked and the car won’t start easily. Other negative results would be raised fuel consumption, ' +
         'car shaking, or even the damage of the three-way catalytic converter and the oxygen sensor.',
       housingGenuine: '2.Housing-Genuine',

@@ -128,8 +128,7 @@
 
             .title {
                 padding-top: 40px;
-                font-size: 24px;
-                font-weight: 500;
+                font-size: 18px;
             }
 
             .sub-title {
@@ -144,8 +143,7 @@
 
             .title {
                 padding-top: 50%;
-                font-size: 36px;
-                font-weight: 600;
+                font-size: 28px;
             }
 
             .sub-title {

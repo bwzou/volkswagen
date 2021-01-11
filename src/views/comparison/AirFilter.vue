@@ -103,10 +103,10 @@
                     </div>
                 </div>
             </div>
-            <div class="harm" v-if="lang==='zh'">
-                <img src="../../assets/harm.png">
-            </div>
-            <div class="section" v-if="lang==='en'">
+<!--            <div class="harm" v-if="lang==='zh'">-->
+<!--                <img src="../../assets/harm.png">-->
+<!--            </div>-->
+            <div class="section">
                 <div class="title">
                     {{$t("comparison.oilFilter.hazards")}}
                 </div>
