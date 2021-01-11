@@ -4,84 +4,84 @@
             <div class="section">
                 <div class="title">
                     <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
-                    {{$t("comparison.oilFilter.title")}}
+                    {{$t("comparison.fuelFilter.title")}}
                 </div>
                 <div class="image">
                     <img src="../../assets/oil-photo.png">
                 </div>
                 <div class="content">
-                    {{$t("comparison.oilFilter.content")}}
+                    {{$t("comparison.fuelFilter.content")}}
                 </div>
             </div>
             <div class="section1">
                 <div class="title">
                     <div class="left">
-                        {{$t("comparison.oilFilter.housingGenuine")}}
+                        {{$t("comparison.fuelFilter.filterMediaGenuine")}}
                     </div>
                     <div class="right">
-                        {{$t("comparison.oilFilter.HousingCounterfeits")}}
+                        {{$t("comparison.fuelFilter.filterMediaCounterfeits")}}
                     </div>
                 </div>
                 <div class="content">
                     <div class="left">
-                        {{$t("comparison.oilFilter.housingGenuineContent")}}
+                        {{$t("comparison.fuelFilter.filterMediaGenuineContent")}}
                     </div>
                     <div class="right">
-                        {{$t("comparison.oilFilter.HousingCounterfeitsContent")}}
-                    </div>
-                </div>
-            </div>
-            <div class="section1">
-                <div class="title">
-                    <div class="left">
-                        {{$t("comparison.oilFilter.bypassValveGenuine")}}
-                    </div>
-                    <div class="right">
-                        {{$t("comparison.oilFilter.bypassValveCounterfeits")}}
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="left">
-                        {{$t("comparison.oilFilter.bypassValveGenuineContent")}}
-                    </div>
-                    <div class="right">
-                        {{$t("comparison.oilFilter.bypassValveCounterfeitsContent")}}
+                        {{$t("comparison.fuelFilter.filterMediaCounterfeitsContent")}}
                     </div>
                 </div>
             </div>
             <div class="section1">
                 <div class="title">
                     <div class="left">
-                        {{$t("comparison.oilFilter.filterPaperGenuine")}}
+                        {{$t("comparison.fuelFilter.housingGenuine")}}
                     </div>
                     <div class="right">
-                        {{$t("comparison.oilFilter.filterPaperCounterfeits")}}
+                        {{$t("comparison.fuelFilter.housingCounterfeits")}}
                     </div>
                 </div>
                 <div class="content">
                     <div class="left">
-                        {{$t("comparison.oilFilter.filterPaperGenuineContent")}}
+                        {{$t("comparison.fuelFilter.housingGenuineContent")}}
                     </div>
                     <div class="right">
-                        {{$t("comparison.oilFilter.filterPaperCounterfeitsContent")}}
+                        {{$t("comparison.fuelFilter.housingCounterfeitsContent")}}
                     </div>
                 </div>
             </div>
             <div class="section1">
                 <div class="title">
                     <div class="left">
-                        {{$t("comparison.oilFilter.sealGenuine")}}
+                        {{$t("comparison.fuelFilter.flameRetardantCoatingGenuine")}}
                     </div>
                     <div class="right">
-                        {{$t("comparison.oilFilter.sealCounterfeits")}}
+                        {{$t("comparison.fuelFilter.flameRetardantCoatingCounterfeits")}}
                     </div>
                 </div>
                 <div class="content">
                     <div class="left">
-                        {{$t("comparison.oilFilter.sealGenuineContent")}}
+                        {{$t("comparison.fuelFilter.flameRetardantCoatingGenuineContent")}}
                     </div>
                     <div class="right">
-                        {{$t("comparison.oilFilter.sealCounterfeitsContent")}}
+                        {{$t("comparison.fuelFilter.flameRetardantCoatingCounterfeitsContent")}}
+                    </div>
+                </div>
+            </div>
+            <div class="section1">
+                <div class="title">
+                    <div class="left">
+                        {{$t("comparison.fuelFilter.pleatsGenuine")}}
+                    </div>
+                    <div class="right">
+                        {{$t("comparison.fuelFilter.pleatsCounterfeits")}}
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        {{$t("comparison.fuelFilter.pleatsGenuineContent")}}
+                    </div>
+                    <div class="right">
+                        {{$t("comparison.fuelFilter.pleatsCounterfeitsContent")}}
                     </div>
                 </div>
             </div>
@@ -115,7 +115,7 @@
   import FooterNav from '../../components/Footer/index'
 
   export default {
-    name: "OilFilter",
+    name: "FuelFilter",
     components: {
       FooterNav
     },

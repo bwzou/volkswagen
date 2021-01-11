@@ -7,11 +7,12 @@
                 <b-nav-item-dropdown :text="lang==='zh' ? '真假百科全书' : 'Encyclopedia'" right>
                     <b-dropdown-item href="#" @click="handleClick('/comparison', 2)">{{$t("navbar.encyclopedia.encyclopediaList")}}</b-dropdown-item>
                     <b-dropdown-item href="#" @click="handleClick('/oil-filter', 2)">{{$t("navbar.encyclopedia.oilFilter")}}</b-dropdown-item>
-                    <b-dropdown-item href="#" @click="handleClick('/comparison', 2)">{{$t("navbar.encyclopedia.cabinFilter")}}</b-dropdown-item>
-                    <b-dropdown-item href="#" @click="handleClick('/comparison', 2)">{{$t("navbar.encyclopedia.airFilter")}}</b-dropdown-item>
-                    <b-dropdown-item href="#" @click="handleClick('/comparison', 2)">{{$t("navbar.encyclopedia.sparkingPlug")}}</b-dropdown-item>
-                    <b-dropdown-item href="#" @click="handleClick('/comparison', 2)">{{$t("navbar.encyclopedia.brakePad")}}</b-dropdown-item>
-                    <b-dropdown-item href="#" @click="handleClick('/comparison', 2)">{{$t("navbar.encyclopedia.pump")}}</b-dropdown-item>
+                    <b-dropdown-item href="#" @click="handleClick('/cabin-filter', 2)">{{$t("navbar.encyclopedia.cabinFilter")}}</b-dropdown-item>
+                    <b-dropdown-item href="#" @click="handleClick('/air-filter', 2)">{{$t("navbar.encyclopedia.airFilter")}}</b-dropdown-item>
+                    <b-dropdown-item href="#" @click="handleClick('/fuel-filter', 2)">{{$t("navbar.encyclopedia.fuelFilter")}}</b-dropdown-item>
+                    <b-dropdown-item href="#" @click="handleClick('/spark-plug', 2)">{{$t("navbar.encyclopedia.sparkingPlug")}}</b-dropdown-item>
+                    <b-dropdown-item href="#" @click="handleClick('/brake-pad', 2)">{{$t("navbar.encyclopedia.brakePad")}}</b-dropdown-item>
+<!--                    <b-dropdown-item href="#" @click="handleClick('/comparison', 2)">{{$t("navbar.encyclopedia.pump")}}</b-dropdown-item>-->
                 </b-nav-item-dropdown>
                 <!--                        <b-nav-item-dropdown text="简体中文" right>-->
                 <!--                            <b-dropdown-item href="#">简体中文</b-dropdown-item>-->

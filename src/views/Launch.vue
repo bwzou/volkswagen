@@ -2,11 +2,14 @@
     <div>
         <div v-if="time>0" class="launch-screen">
             <div class="header">
-                <div class="title">VOLKSWAGEN</div>
-                <div class="sub-title">GROUP CHINA</div>
+<!--                <div class="title">VOLKSWAGEN</div>-->
+<!--                <div class="sub-title">GROUP CHINA</div>-->
             </div>
             <div class="content">
-                <div class="title">SAY  NO  TO  FAKE</div>
+                <div class="title">
+                    <div>{{$t("launch.title")}}</div>
+                    <div v-if="lang === 'zh'">{{$t("launch.title2")}}</div>
+                </div>
                 <div class="sub-title">
                     <div>Brand Protection</div>
                     <div>大众中国品牌保护</div>
@@ -17,8 +20,8 @@
         <div v-if="time===0" class="launch-content">
             <nav-bar></nav-bar>
             <div class="header">
-                <div class="title">VOLKSWAGEN</div>
-                <div class="sub-title">GROUP CHINA</div>
+<!--                <div class="title">VOLKSWAGEN</div>-->
+<!--                <div class="sub-title">GROUP CHINA</div>-->
                 <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
             </div>
             <div class="content">
@@ -46,11 +49,13 @@
 
 <script>
   import { mapGetters } from 'vuex'
+  import NavBar from '../components/Navbar/index'
   import FooterNav from '../components/Footer/index'
 
   export default {
     name: "Launch",
     components: {
+      NavBar,
       FooterNav
     },
     data() {
@@ -110,15 +115,16 @@
         width: 100%;
         height: 100vh;
         text-align: center;
-        /*background-image: url("../assets/launch.jpeg");*/
-        /*background-size: auto 100vh;*/
-        /*background-position: center;*/
 
 
         .header {
             height: 110px;
             color: rgb(78, 82, 84);
             background-color: #fff;
+            background-image: url("../assets/header.png") ;
+            background-repeat: no-repeat;
+            background-size: auto 45px;
+            background-position: center;
 
             .title {
                 padding-top: 40px;
@@ -134,7 +140,7 @@
         .content {
             height: calc(100vh - 110px);
             color: #fff;
-            background-color: rgb(7, 33, 76);
+            background-color: rgb(0, 51, 102);
 
             .title {
                 padding-top: 50%;
@@ -178,6 +184,10 @@
             height: 110px;
             color: rgb(78, 82, 84);
             background-color: #fff;
+            background-image: url("../assets/header.png") ;
+            background-repeat: no-repeat;
+            background-size: auto 45px;
+            background-position: center;
             z-index: 10;
 
             .title {
@@ -208,7 +218,7 @@
             height: calc(100vh - 180px);
             overflow-y: auto;
             color: #000;
-            background-color: rgb(7, 33, 76);
+            background-color: rgb(0, 51, 102);
 
             .line {
                 margin-bottom: 20px;

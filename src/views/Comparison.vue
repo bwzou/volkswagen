@@ -1,48 +1,58 @@
 <template>
     <div>
         <div class="launch-content">
+            <nav-bar></nav-bar>
             <div class="header">
-                <div class="title">VOLKSWAGEN</div>
-                <div class="sub-title">GROUP CHINA</div>
+<!--                <div class="title">VOLKSWAGEN</div>-->
+<!--                <div class="sub-title">GROUP CHINA</div>-->
                 <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
             </div>
             <div class="content">
+                <div class="line-input">
+                    <b-form-input v-model="value" placeholder="Search..." @update="handleSearch"></b-form-input>
+                </div>
                 <div class="line" @click="handleChange('/oil-filter', 2)">
                     <img src="../assets/part/oilFilter.png">
                     <div class="text">
                         {{$t("navbar.encyclopedia.oilFilter")}}
                     </div>
                 </div>
-                <div class="line">
+                <div class="line" @click="handleChange('/cabin-filter', 2)">
                     <img src="../assets/part/cabinFilter.png">
                     <div class="text">
                         {{$t("navbar.encyclopedia.cabinFilter")}}
                     </div>
                 </div>
-                <div class="line">
+                <div class="line" @click="handleChange('/air-filter', 2)">
                     <img src="../assets/part/airFilter.png">
                     <div class="text">
                         {{$t("navbar.encyclopedia.airFilter")}}
                     </div>
                 </div>
-                <div class="line">
+                <div class="line" @click="handleChange('/fuel-filter', 2)">
+                    <img src="../assets/part/pump.png">
+                    <div class="text">
+                        {{$t("navbar.encyclopedia.fuelFilter")}}
+                    </div>
+                </div>
+                <div class="line" @click="handleChange('/spark-plug', 2)">
                     <img src="../assets/part/sparkingPlug.png">
                     <div class="text">
                         {{$t("navbar.encyclopedia.sparkingPlug")}}
                     </div>
                 </div>
-                <div class="line">
+                <div class="line" @click="handleChange('/brake-pad', 2)">
                     <img src="../assets/part/brakePad.png">
                     <div class="text">
                         {{$t("navbar.encyclopedia.brakePad")}}
                     </div>
                 </div>
-                <div class="line">
-                    <img src="../assets/part/pump.png">
-                    <div class="text">
-                        {{$t("navbar.encyclopedia.pump")}}
-                    </div>
-                </div>
+<!--                <div class="line">-->
+<!--                    <img src="../assets/part/pump.png">-->
+<!--                    <div class="text">-->
+<!--                        {{$t("navbar.encyclopedia.pump")}}-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
             <footer-nav class="footer"></footer-nav>
         </div>
@@ -51,16 +61,18 @@
 
 <script>
   import { mapGetters } from 'vuex'
+  import NavBar from '../components/Navbar/index'
   import FooterNav from '../components/Footer/index'
 
   export default {
     name: "Comparison",
     components: {
-      FooterNav
+      FooterNav,
+      NavBar
     },
     data() {
       return  {
-
+        value: ''
       }
     },
     computed: {
@@ -80,6 +92,9 @@
         if(this.$route.path !== path) {
           this.$router.push(path)
         }
+      },
+      handleSearch() {
+        console.log(this.value)
       },
       handleLanguage() {
         let lang = localStorage.getItem('locale')
@@ -117,6 +132,10 @@
             height: 110px;
             color: rgb(78, 82, 84);
             background-color: #fff;
+            background-image: url("../assets/header.png") ;
+            background-repeat: no-repeat;
+            background-size: auto 45px;
+            background-position: center;
             z-index: 10;
 
             .title {
@@ -147,7 +166,14 @@
             height: calc(100vh - 180px);
             overflow-y: auto;
             color: #000;
-            background-color: rgb(7, 33, 76);
+            background-color: rgb(0, 51, 102);
+
+            .line-input {
+                margin-bottom: 20px;
+                font-size: 20px;
+                text-align: left;
+                background-color: #fff;
+            }
 
             .line {
                 margin-bottom: 20px;

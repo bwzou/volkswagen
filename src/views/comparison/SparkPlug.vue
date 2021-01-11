@@ -4,84 +4,66 @@
             <div class="section">
                 <div class="title">
                     <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
-                    {{$t("comparison.oilFilter.title")}}
+                    {{$t("comparison.sparkPlug.title")}}
                 </div>
                 <div class="image">
                     <img src="../../assets/oil-photo.png">
                 </div>
                 <div class="content">
-                    {{$t("comparison.oilFilter.content")}}
+                    {{$t("comparison.sparkPlug.content")}}
                 </div>
             </div>
             <div class="section1">
                 <div class="title">
                     <div class="left">
-                        {{$t("comparison.oilFilter.housingGenuine")}}
+                        {{$t("comparison.sparkPlug.excellentIgnitionProperties")}}
                     </div>
                     <div class="right">
-                        {{$t("comparison.oilFilter.HousingCounterfeits")}}
+                        {{$t("comparison.sparkPlug.proneToFaults")}}
                     </div>
                 </div>
                 <div class="content">
                     <div class="left">
-                        {{$t("comparison.oilFilter.housingGenuineContent")}}
+                        {{$t("comparison.sparkPlug.excellentIgnitionPropertiesContent")}}
                     </div>
                     <div class="right">
-                        {{$t("comparison.oilFilter.HousingCounterfeitsContent")}}
-                    </div>
-                </div>
-            </div>
-            <div class="section1">
-                <div class="title">
-                    <div class="left">
-                        {{$t("comparison.oilFilter.bypassValveGenuine")}}
-                    </div>
-                    <div class="right">
-                        {{$t("comparison.oilFilter.bypassValveCounterfeits")}}
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="left">
-                        {{$t("comparison.oilFilter.bypassValveGenuineContent")}}
-                    </div>
-                    <div class="right">
-                        {{$t("comparison.oilFilter.bypassValveCounterfeitsContent")}}
+                        {{$t("comparison.sparkPlug.proneToFaultsContent")}}
                     </div>
                 </div>
             </div>
             <div class="section1">
                 <div class="title">
                     <div class="left">
-                        {{$t("comparison.oilFilter.filterPaperGenuine")}}
+                        {{$t("comparison.sparkPlug.idealTempControl")}}
                     </div>
                     <div class="right">
-                        {{$t("comparison.oilFilter.filterPaperCounterfeits")}}
+                        {{$t("comparison.sparkPlug.lowTempAndPoorRadiation")}}
                     </div>
                 </div>
                 <div class="content">
                     <div class="left">
-                        {{$t("comparison.oilFilter.filterPaperGenuineContent")}}
+                        {{$t("comparison.sparkPlug.idealTempControlContent")}}
                     </div>
                     <div class="right">
-                        {{$t("comparison.oilFilter.filterPaperCounterfeitsContent")}}
+                        {{$t("comparison.sparkPlug.lowTempAndPoorRadiationContent")}}
                     </div>
                 </div>
             </div>
             <div class="section1">
                 <div class="title">
                     <div class="left">
-                        {{$t("comparison.oilFilter.sealGenuine")}}
+                        {{$t("comparison.sparkPlug.decreasedMaintenanceCosts")}}
                     </div>
                     <div class="right">
-                        {{$t("comparison.oilFilter.sealCounterfeits")}}
+                        {{$t("comparison.sparkPlug.lowTempAndPoorRadiation")}}
                     </div>
                 </div>
                 <div class="content">
                     <div class="left">
-                        {{$t("comparison.oilFilter.sealGenuineContent")}}
+                        {{$t("comparison.sparkPlug.decreasedMaintenanceCostsContent")}}
                     </div>
                     <div class="right">
-                        {{$t("comparison.oilFilter.sealCounterfeitsContent")}}
+                        {{$t("comparison.sparkPlug.lowTempAndPoorRadiationContent")}}
                     </div>
                 </div>
             </div>
@@ -115,7 +97,7 @@
   import FooterNav from '../../components/Footer/index'
 
   export default {
-    name: "OilFilter",
+    name: "SparkPlug",
     components: {
       FooterNav
     },

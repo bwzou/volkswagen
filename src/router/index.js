@@ -33,10 +33,45 @@ export const routes = [
     hidden: true
   },
   {
+    path: '/air-filter',
+    component: () => import('../views/comparison/AirFilter'),
+    name: '空气滤清器',
+    meta: { title: '空气滤清器' },
+    hidden: true
+  },
+  {
+    path: '/cabin-filter',
+    component: () => import('../views/comparison/CabinFilter'),
+    name: '空调滤清器',
+    meta: { title: '空调滤清器' },
+    hidden: true
+  },
+  {
+    path: '/fuel-filter',
+    component: () => import('../views/comparison/FuelFilter'),
+    name: '汽油滤清器',
+    meta: { title: '汽油滤清器' },
+    hidden: true
+  },
+  {
     path: '/oil-filter',
     component: () => import('../views/comparison/OilFilter'),
     name: '机油滤清器',
     meta: { title: '机油滤清器' },
+    hidden: true
+  },
+  {
+    path: '/brake-pad',
+    component: () => import('../views/comparison/BrakePad'),
+    name: '刹车片',
+    meta: { title: '刹车片' },
+    hidden: true
+  },
+  {
+    path: '/spark-plug',
+    component: () => import('../views/comparison/SparkPlug'),
+    name: '火花塞',
+    meta: { title: '火花塞' },
     hidden: true
   },
   {
