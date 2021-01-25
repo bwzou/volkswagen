@@ -7,7 +7,7 @@
                     {{$t("comparison.airFilter.title")}}
                 </div>
                 <div class="image">
-<!--                    <img src="../../assets/oil-photo.png">-->
+                    <img src="../../assets/airFilter.png">
                 </div>
                 <div class="content">
                     {{$t("comparison.airFilter.content")}}

@@ -6,9 +6,9 @@
                     <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
                     {{$t("comparison.cabinFilter.title")}}
                 </div>
-<!--                <div class="image">-->
-<!--                    <img src="../../assets/oil-photo.png">-->
-<!--                </div>-->
+                <div class="image">
+                    <img src="../../assets/cabinFilter.png">
+                </div>
                 <div class="content">
                     {{$t("comparison.cabinFilter.content")}}
                 </div>

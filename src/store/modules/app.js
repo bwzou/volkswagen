@@ -1,5 +1,5 @@
 const state = {
-  time: 3,
+  time: 2,
   activeStatus: true,
   activeTab: 1,
   lang: localStorage.getItem('locale') || 'zh'

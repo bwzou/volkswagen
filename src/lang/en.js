@@ -64,7 +64,7 @@ export default {
         'oil can be circulated to moving parts such as crankshafts, connecting rods, cramshafts, turbochargers,' +
         ' pistons, etc., serving the purpose of lubricating, cooling and cleansing, thus improving the service ' +
         'life of these parts.',
-      housingGenuine: '1.Housing-Genuine',
+      housingGenuine: 'sparkingPlug.png.Housing-Genuine',
       housingGenuineContent: 'The genuine OEM oil filters use high-quality metal housings, effectively preventing ' +
         'burst under different pressure peaks.',
       HousingCounterfeits: '5.Housing-Counterfeits',
@@ -104,7 +104,7 @@ export default {
         ' from circulating in your car. Well-functioning filters provide you with clean, filtered cabin air, making your car a healthier, ' +
         'more comfortable place to be. While everyone enjoys clean air, a cabin air filter is especially beneficial to those who have ' +
         'allergies and respiratory issues. Essentially, it is an indispensable part of your car.',
-      filterMediaGenuine: '1.Filter Media-Genuine',
+      filterMediaGenuine: 'sparkingPlug.png.Filter Media-Genuine',
       filterMediaGenuineContent: 'The filter media is the most important component of a cabin air filter, also a key factor in ' +
         'delivering its filtration performance. Volkswagen OEM filters use nanofiber technologies to efficiently trap harmful particles' +
         ' and gases, such as dust, pollen, exhaust, other allergens, etc.',
@@ -148,10 +148,10 @@ export default {
         'while continuously meeting the engine’s requirement of air consumption within service life. Complex techniques are adopted to ensure the aforesaid features, ' +
         'such as an expanded pleat size, fixed and precise filter paper embossment (to realize geometric stability that makes sure a filter can function properly ' +
         'even under moisture and pressure), etc.',
-      filterMediaGenuine: '1.Filter Media-Genuine',
+      filterMediaGenuine: 'sparkingPlug.png.Filter Media-Genuine',
       filterMediaGenuineContent: 'Dust filtration is the primary goal of an air filter, so excellent filter materials are the key. Volkswagen OEM engine air filters ' +
         'have an original filter efficiency no lower than 99.5%. Their high filtration efficiency and strong mechanical stability can help screen out microscopic ' +
-        'particles (﹥1-2um), such as dust, pollen, grits, soot and water drips. Thus, the quality of combustion and engine stability are improved.',
+        'particles (﹥sparkingPlug.png-2um), such as dust, pollen, grits, soot and water drips. Thus, the quality of combustion and engine stability are improved.',
       filterMediaCounterfeit: '6.Filter Media-Counterfeits',
       filterMediaCounterfeitContent: 'Fake engine air filters usually use filter materials of low density and humidity. As a result, the geometric stability and ' +
         'filtering performance can no longer hold in excessively humid conditions, causing the filter to collapse and the filter element to be punctured and fail ' +
@@ -187,7 +187,7 @@ export default {
       content: 'The fuel filter, also known as the gasoline/diesel filter, is found between the fuel pump and throttle body. Volkswagen OEM fuel filters keep impurities in the ' +
         'fuel from getting into the fuel pump, such as moisture, iron oxides, dust, etc., in order to avoid clogging and minimize mechanical wear for the fuel pump, nuzzle, ' +
         'cylinder liner, piston rings, etc. In a word, the fuel filter plays a role in improving the stability, economic efficiency, power performance and service life of an engine.',
-      filterMediaGenuine: '1.Filter Media-Genuine',
+      filterMediaGenuine: 'sparkingPlug.png.Filter Media-Genuine',
       filterMediaGenuineContent: 'Volkswagen OEM fuel filters use imported sealants and multi-layer fiber filter element of which the features of erosion-resistance, uniform' +
         ' thickness and high fineness help effectively screen out the impurities and moisture and ensure the proper function of the fuel system and the engine.',
       filterMediaCounterfeits: '5.Filter Media-Counterfeits',
@@ -218,7 +218,7 @@ export default {
       content: 'The brake pads are a key safety component in a car’s braking system. Whether you can stop your car effectively and have a safe driving experience relies on the brake pads.' +
         ' The statistics released by transport authorities show 30% of the traffic accidents are caused by braking failure. A well-functioning set of brake pads safeguard the driver and ' +
         'passengers and the car itself.',
-      thermalBarrierGenuine: '1.Thermal Barrier-Genuine',
+      thermalBarrierGenuine: 'sparkingPlug.png.Thermal Barrier-Genuine',
       thermalBarrierGenuineContent: 'Volkswagen OEM brake pads are equipped with a thermal barrier made of insulating materials so that the heat of the friction layer during frequent ' +
         'braking won’t be conducted to the brake caliper and the brake hose, maintaining the braking system’s stable performance.',
       thermalBarrierCounterfeit: '4.Thermal Barrier-Counterfeit',
@@ -241,7 +241,7 @@ export default {
       title: 'Spark Plug',
       content: 'The spark plug, connected to the high voltage generated by an ignition coil, is a crucial part that fits into the cylinder head of an internal combustion engine and' +
         ' carries two electrodes separated by an air gap across which the current from the ignition system discharges to form the spark for combustion. It is called the heart of an engine.',
-      excellentIgnitionProperties: '1.Excellent Ignition Properties-Genuine',
+      excellentIgnitionProperties: 'sparkingPlug.png.Excellent Ignition Properties-Genuine',
       excellentIgnitionPropertiesContent: 'The electrodes are precisely designed to allow for stable ignition, a rapid flame spread and high fuel efficiency; during ignition, the voltage is ' +
         'low to protect the electrodes from tear and wear and increase the stability of the spark plug; low ignition voltage and precise electrodes design make the engine function in a more smooth and powerful manner.',
       idealTempControl: '2.Ideal Temp Control-Genuine',

@@ -7,7 +7,7 @@
                     {{$t("comparison.oilFilter.title")}}
                 </div>
                 <div class="image">
-                    <img src="../../assets/oil-photo.png">
+                    <img src="../../assets/oilFilter.png">
                 </div>
                 <div class="content">
                     {{$t("comparison.oilFilter.content")}}
