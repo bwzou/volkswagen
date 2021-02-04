@@ -2,18 +2,21 @@
     <div>
         <div class="section">
             <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
-            <div class="title">
+            <div class="title" :style="{'text-align':(lang === 'en' ? 'left': 'center')}">
                 {{$t("aboutUs.aboutUs")}}
             </div>
-            <div class="content">
+            <div class="content" :style="{'line-height' : (lang === 'en' ? '1.3': 'unset')}">
                 {{$t("aboutUs.aboutUsContent1")}}
             </div>
-            <div class="content">
+            <br/>
+            <div class="content" :style="{'line-height': (lang === 'en' ? '1.3': 'unset')}">
                 {{$t("aboutUs.aboutUsContent2")}}
             </div>
-            <div class="content">
+            <br/>
+            <div class="content" :style="{'line-height': (lang === 'en' ? '1.3': 'unset')}">
                 {{$t("aboutUs.aboutUsContent3")}}
             </div>
+            <br/>
         </div>
         <footer-nav></footer-nav>
     </div>
@@ -41,7 +44,7 @@
       })
     },
     mounted() {
-
+        console.log(this.lang)
     },
     methods: {
       handleClick(item) {
@@ -93,7 +96,7 @@
         }
 
         .content {
-            text-align: left;
+            text-align: justify;
             font-size: 16px;
         }
     }

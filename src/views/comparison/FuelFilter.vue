@@ -7,22 +7,27 @@
                     {{$t("comparison.fuelFilter.title")}}
                 </div>
                 <div class="image">
-                    <img src="../../assets/fuelFilter.png">
+                    <img src="../../assets/fuelFilter.jpg">
                 </div>
-                <div class="content">
+                <div class="content" :style="{'line-height' : (lang === 'en' ? '1.3': 'unset')}">
                     {{$t("comparison.fuelFilter.content")}}
                 </div>
             </div>
             <div class="section1">
                 <div class="title">
                     <div class="left">
-                        {{$t("comparison.fuelFilter.filterMediaGenuine")}}
+                        {{$t("comparison.genuine")}}
                     </div>
                     <div class="right">
-                        {{$t("comparison.fuelFilter.filterMediaCounterfeits")}}
+                        {{$t("comparison.counterfeit")}}
                     </div>
                 </div>
-                <div class="content">
+            </div>
+            <div class="section2">
+                {{$t("comparison.fuelFilter.filterMedia")}}
+            </div>
+            <div class="section1">
+                <div class="content" :style="{'line-height' : (lang === 'en' ? '1.3': 'unset')}">
                     <div class="left">
                         {{$t("comparison.fuelFilter.filterMediaGenuineContent")}}
                     </div>
@@ -31,16 +36,11 @@
                     </div>
                 </div>
             </div>
+            <div class="section2">
+                {{$t("comparison.fuelFilter.housing")}}
+            </div>
             <div class="section1">
-                <div class="title">
-                    <div class="left">
-                        {{$t("comparison.fuelFilter.housingGenuine")}}
-                    </div>
-                    <div class="right">
-                        {{$t("comparison.fuelFilter.housingCounterfeits")}}
-                    </div>
-                </div>
-                <div class="content">
+                <div class="content" :style="{'line-height' : (lang === 'en' ? '1.3': 'unset')}">
                     <div class="left">
                         {{$t("comparison.fuelFilter.housingGenuineContent")}}
                     </div>
@@ -49,16 +49,11 @@
                     </div>
                 </div>
             </div>
+            <div class="section2">
+                {{$t("comparison.fuelFilter.flameRetardantCoating")}}
+            </div>
             <div class="section1">
-                <div class="title">
-                    <div class="left">
-                        {{$t("comparison.fuelFilter.flameRetardantCoatingGenuine")}}
-                    </div>
-                    <div class="right">
-                        {{$t("comparison.fuelFilter.flameRetardantCoatingCounterfeits")}}
-                    </div>
-                </div>
-                <div class="content">
+                <div class="content" :style="{'line-height' : (lang === 'en' ? '1.3': 'unset')}">
                     <div class="left">
                         {{$t("comparison.fuelFilter.flameRetardantCoatingGenuineContent")}}
                     </div>
@@ -67,16 +62,11 @@
                     </div>
                 </div>
             </div>
+            <div class="section2">
+                {{$t("comparison.fuelFilter.pleats")}}
+            </div>
             <div class="section1">
-                <div class="title">
-                    <div class="left">
-                        {{$t("comparison.fuelFilter.pleatsGenuine")}}
-                    </div>
-                    <div class="right">
-                        {{$t("comparison.fuelFilter.pleatsCounterfeits")}}
-                    </div>
-                </div>
-                <div class="content">
+                <div class="content" :style="{'line-height' : (lang === 'en' ? '1.3': 'unset')}">
                     <div class="left">
                         {{$t("comparison.fuelFilter.pleatsGenuineContent")}}
                     </div>
@@ -92,14 +82,16 @@
                 <div class="title">
                     {{$t("comparison.oilFilter.hazards")}}
                 </div>
-                <div class="content">
-                    <p>{{$t("comparison.oilFilter.hazards1")}}</p>
-                    <p>{{$t("comparison.oilFilter.hazards2")}}</p>
-                    <p>{{$t("comparison.oilFilter.hazards3")}}</p>
-                    <p>{{$t("comparison.oilFilter.hazards4")}}</p>
-                    <p>{{$t("comparison.oilFilter.hazards5")}}</p>
-                    <p>{{$t("comparison.oilFilter.hazards6")}}</p>
-                    <p>{{$t("comparison.oilFilter.hazards7")}}</p>
+                <div class="content" :style="{'line-height' : (lang === 'en' ? '1.3': 'unset')}">
+                    <ul style="list-style-type:circle">
+                        <li>{{$t("comparison.oilFilter.hazards1")}}</li>
+                        <li>{{$t("comparison.oilFilter.hazards2")}}</li>
+                        <li>{{$t("comparison.oilFilter.hazards3")}}</li>
+                        <li>{{$t("comparison.oilFilter.hazards4")}}</li>
+                        <li>{{$t("comparison.oilFilter.hazards5")}}</li>
+                        <li>{{$t("comparison.oilFilter.hazards6")}}</li>
+                        <li>{{$t("comparison.oilFilter.hazards7")}}</li>
+                    </ul>
                 </div>
                 <div class="bottom">
                     {{$t("comparison.oilFilter.save")}}
@@ -168,7 +160,6 @@
     }
 
     .section {
-        padding: 16px;
         font-size: 16px;
 
         .title {
@@ -177,6 +168,7 @@
         }
 
         .image {
+            padding: 16px;
             width: 100%;
             height: 100%;
 
@@ -186,16 +178,18 @@
         }
 
         .content {
-            padding-top: 16px;
-            text-align: left;
+            padding: 16px;
+            text-align: justify;
+            background-color: rgb(238, 238, 238);
 
-            p {
+            p, li {
                 margin-bottom: 8px;
             }
         }
 
         .bottom {
-            padding-top: 16px;
+            font-size: 28px;
+            padding: 12px 8px;
         }
     }
 
@@ -229,7 +223,7 @@
 
             .left, .right {
                 display: inline-block;
-                padding: 0 8px 8px 8px;
+                padding: 10px;
                 width: 50%;
                 height: auto;
                 word-break: break-word;
@@ -237,6 +231,13 @@
                 vertical-align: top;
             }
         }
+    }
+
+    .section2 {
+        padding: 12px 8px;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: rgb(238, 238, 238);
     }
 
     .left {

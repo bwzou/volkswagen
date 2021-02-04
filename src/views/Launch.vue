@@ -15,7 +15,7 @@
                     <div>大众中国品牌保护</div>
                 </div>
             </div>
-            <div class="counter" @click="handleJunp">跳过{{time}}</div>
+            <div class="counter" @click="handleJunp">跳过</div>
         </div>
         <div v-if="time===0" class="launch-content">
             <nav-bar></nav-bar>

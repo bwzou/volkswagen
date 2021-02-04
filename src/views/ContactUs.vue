@@ -2,10 +2,10 @@
     <div>
         <div class="section">
             <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
-            <div class="title">
+            <div class="title" :style="{'text-align':(lang === 'en' ? 'left': 'center')}">
                 {{$t("aboutUs.contactUs")}}
             </div>
-            <div class="content">
+            <div class="content" :style="{'line-height' : (lang === 'en' ? '1.3': 'unset')}">
                 {{$t("aboutUs.contactUsContent")}}
             </div>
         </div>
@@ -68,7 +68,7 @@
         }
 
         .content {
-            text-align: left;
+            text-align: justify;
             font-size: 16px;
         }
     }

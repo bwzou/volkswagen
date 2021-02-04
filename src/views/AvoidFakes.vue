@@ -2,11 +2,19 @@
     <div>
         <div class="section">
             <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
-            <div class="title">
+            <div class="title" :style="{'text-align':(lang === 'en' ? 'left': 'center')}">
                 {{$t("aboutUs.counterfeits")}}
             </div>
-            <div class="content">
-                {{$t("aboutUs.counterfeitsContent")}}
+            <div class="content" :style="{'line-height' : (lang === 'en' ? '1.3': 'unset')}">
+                &nbsp;&nbsp;{{$t("aboutUs.counterfeitsContent1")}}
+            </div>
+            <br/>
+            <div class="content" :style="{'line-height' : (lang === 'en' ? '1.3': 'unset')}">
+                &nbsp;&nbsp;{{$t("aboutUs.counterfeitsContent2")}}
+            </div>
+            <br/>
+            <div class="content" :style="{'line-height' : (lang === 'en' ? '1.3': 'unset')}">
+                &nbsp;&nbsp;{{$t("aboutUs.counterfeitsContent3")}}
             </div>
         </div>
         <footer-nav></footer-nav>
@@ -68,7 +76,7 @@
         }
 
         .content {
-            text-align: left;
+            text-align: justify;
             font-size: 16px;
         }
     }
