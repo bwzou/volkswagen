@@ -242,6 +242,7 @@ export default {
     aboutUs: 'About us',
     contactUs: 'Contact us',
     encyclopedia: 'Encyclopedia',
+    ipComics: 'IP Comics',
     counterfeits: 'How to avoid counterfeits',
   }
 }

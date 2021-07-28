@@ -184,6 +184,7 @@ export default {
     language: '中',
     aboutUs: '关于我们',
     contactUs: '联系我们',
+    ipComics: 'IP 小剧场',
     encyclopedia: '真假百科全书',
     counterfeits: '如何避免买到假货',
   }

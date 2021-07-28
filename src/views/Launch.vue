@@ -37,6 +37,10 @@
                     <img src="../assets/svg/book0.svg">
                     {{$t("launch.encyclopedia")}}
                 </div>
+                <div class="line" @click="handleChange('/ip-comics', 4)">
+                    <img src="../assets/svg/ipcomics.svg">
+                    {{$t("launch.ipComics")}}
+                </div>
                 <div class="line" @click="handleChange('/avoid-fakes', 1)">
                     <img src="../assets/svg/fake0.svg">
                     {{$t("launch.counterfeits")}}
