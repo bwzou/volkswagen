@@ -2,7 +2,7 @@
     <div>
         <div class="section">
             <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
-            <div v-if="lang === 'en'" style="">
+            <div v-show="lang === 'en'" style="padding-top: 50px">
                 <img src="../assets/comics/ip1-en.png" width="100%">
                 <img src="../assets/comics/ip2-en.png" width="100%">
                 <img src="../assets/comics/ip3-en.png" width="100%">
@@ -10,7 +10,7 @@
                 <img src="../assets/comics/ip5-en.png" width="100%">
                 <img src="../assets/comics/ip6-en.png" width="100%">
             </div>
-            <div v-if="lang === 'zh'">
+            <div v-show="lang === 'zh'" style="padding-top: 50px">
                 <img src="../assets/comics/ip1.png" width="100%">
                 <img src="../assets/comics/ip2.png" width="100%">
                 <img src="../assets/comics/ip3.png" width="100%">
@@ -59,7 +59,7 @@
         height: calc(100vh - 70px);
         overflow-y: auto;
         background-color: #fff;
-        padding: 80px 20px;
+        padding: 60px 20px;
 
         .language {
             float: right;
