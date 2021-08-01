@@ -1,36 +1,33 @@
 <template>
     <div>
-        <div class="section">
-            <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
-            <div v-show="lang === 'en'" style="padding-top: 50px">
-                <img src="../assets/comics/ip1-en.png" width="100%">
-                <img src="../assets/comics/ip2-en.png" width="100%">
-                <img src="../assets/comics/ip3-en.png" width="100%">
-                <img src="../assets/comics/ip4-en.png" width="100%">
-                <img src="../assets/comics/ip5-en.png" width="100%">
-                <img src="../assets/comics/ip6-en.png" width="100%">
+        <div class="launch-content">
+            <nav-bar></nav-bar>
+            <div class="header">
+                <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
             </div>
-            <div v-show="lang === 'zh'" style="padding-top: 50px">
-                <img src="../assets/comics/ip1.png" width="100%">
-                <img src="../assets/comics/ip2.png" width="100%">
-                <img src="../assets/comics/ip3.png" width="100%">
-                <img src="../assets/comics/ip4.png" width="100%">
-                <img src="../assets/comics/ip5.png" width="100%">
-                <img src="../assets/comics/ip6.jpg" width="100%">
+            <div class="content">
+                <div class="line" @click="handleChange('/ip-comics/part1', 1)">
+<!--                    <img src="../assets/part/oilFilter.png">-->
+                    <div class="text">
+                        {{$t("navbar.ipComics.part1")}}
+                    </div>
+                </div>
             </div>
+            <footer-nav class="footer"></footer-nav>
         </div>
-        <footer-nav></footer-nav>
     </div>
 </template>
 
 <script>
   import { mapGetters } from 'vuex'
   import FooterNav from '../components/Footer/index'
+  import NavBar from '../components/Navbar/index'
 
   export default {
     name: "IpComics",
     components: {
-      FooterNav
+      FooterNav,
+      NavBar
     },
     computed: {
       ...mapGetters({
@@ -38,6 +35,13 @@
       })
     },
     methods: {
+      handleChange(path, tab) {
+        this.$store.dispatch('app/toggleActiveStatus', true)
+        this.$store.dispatch('app/toggleActiveTab', tab)
+        if(this.$route.path !== path) {
+          this.$router.push(path)
+        }
+      },
       handleLanguage() {
         let lang = localStorage.getItem('locale')
         if (lang === 'zh') {
@@ -55,20 +59,92 @@
 </script>
 
 <style scoped lang="scss">
-    .section {
-        height: calc(100vh - 70px);
-        overflow-y: auto;
-        background-color: #fff;
-        padding: 60px 20px;
+    .launch-content {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
 
-        .language {
-            float: right;
-            height: 30px;
-            width: 40px;
-            color: #fff;
-            font-size: 20px;
-            font-weight: 600;
-            background-color: rgb(222, 84, 82);
+        .navbar {
+            right: unset;
+            background-color: #fff;
+
+            .navbar-toggler {
+                padding: 0.25rem 0.35rem;
+            }
+        }
+
+        .header {
+            height: 110px;
+            color: rgb(78, 82, 84);
+            background-color: #fff;
+            background-image: url("../assets/header.png") ;
+            background-repeat: no-repeat;
+            background-size: auto 45px;
+            background-position: center;
+            z-index: 10;
+
+            .title {
+                padding-top: 40px;
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            .sub-title {
+                font-size: 12px;
+            }
+
+            .language {
+                position: absolute;
+                top: 45px;
+                right: 10px;
+                height: 30px;
+                width: 40px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                background-color: rgb(222, 84, 82);
+            }
+        }
+
+        .content {
+            padding: 16px;
+            height: calc(100vh - 180px);
+            overflow-y: auto;
+            color: #000;
+            background-color: rgb(0, 51, 102);
+
+            .line-input {
+                margin-bottom: 20px;
+                font-size: 20px;
+                text-align: left;
+                background-color: #fff;
+            }
+
+            .line {
+                margin-bottom: 20px;
+                padding: 10px 10px;
+                height: 70px;
+                line-height: 50px;
+                font-size: 20px;
+                text-align: left;
+                background-color: #fff;
+
+                img {
+                    height: 50px;
+                    width: 50px;
+                    margin-left: 10px;
+                }
+
+                .text {
+                    display: inline-block;
+                    text-align: center;
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
         }
     }
 </style>

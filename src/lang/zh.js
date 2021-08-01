@@ -11,6 +11,9 @@ export default {
       sparkingPlug: '火花塞',
       brakePad: '刹车片',
       // pump: '水泵'
+    },
+    ipComics: {
+      part1: '第一期: 关于汽配维修, 你入"坑"了吗？'
     }
   },
   aboutUs: {

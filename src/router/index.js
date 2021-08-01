@@ -33,6 +33,13 @@ export const routes = [
     hidden: true
   },
   {
+    path: '/ip-comics/part1',
+    component: () => import('../views/ipcomics/Part1'),
+    name: '第一部分',
+    meta: { title: '第一部分' },
+    hidden: true
+  },
+  {
     path: '/comparison',
     component: () => import('../views/Comparison'),
     name: '真假百科全书',

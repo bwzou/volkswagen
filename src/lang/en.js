@@ -11,6 +11,9 @@ export default {
       sparkingPlug: 'Sparking Plug',
       brakePad: 'Brake Pad',
       // pump: 'Pump'
+    },
+    ipComics: {
+      part1: 'One: Do you know what mishaps you may encounter in automotive care and maintance?'
     }
   },
   aboutUs: {
