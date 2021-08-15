@@ -13,7 +13,7 @@ export default {
       // pump: '水泵'
     },
     ipComics: {
-      part1: '第一期: 关于汽配维修, 你入"坑"了吗？'
+      part1: '第一期: 汽车的口罩空气滤清器'
     }
   },
   aboutUs: {
@@ -187,7 +187,7 @@ export default {
     language: '中',
     aboutUs: '关于我们',
     contactUs: '联系我们',
-    ipComics: 'IP 小剧场',
+    ipComics: '漫画"IP"小剧场',
     encyclopedia: '真假百科全书',
     counterfeits: '如何避免买到假货',
   }

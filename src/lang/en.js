@@ -13,7 +13,7 @@ export default {
       // pump: 'Pump'
     },
     ipComics: {
-      part1: 'One: Do you know what mishaps you may encounter in automotive care and maintance?'
+      part1: '1. Masks for cars: Air Filters'
     }
   },
   aboutUs: {
