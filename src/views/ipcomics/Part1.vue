@@ -37,6 +37,14 @@
         lang: 'lang'
       })
     },
+    mounted() {
+        const {aplus_queue} = window;
+        aplus_queue&&aplus_queue.push({
+            action: 'aplus.sendPV',
+            arguments: [{is_auto: false}]
+        }); 
+        console.log('test')
+    },
     methods: {
       handleLanguage() {
         let lang = localStorage.getItem('locale')

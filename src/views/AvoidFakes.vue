@@ -35,7 +35,14 @@
         lang: 'lang'
       })
     },
-    methods: {
+      mounted() {
+          const {aplus_queue} = window;
+          aplus_queue&&aplus_queue.push({
+              action: 'aplus.sendPV',
+              arguments: [{is_auto: false}]
+          });
+      },
+      methods: {
       handleLanguage() {
         let lang = localStorage.getItem('locale')
         if (lang === 'zh') {

@@ -2,8 +2,6 @@
     <div>
         <div v-if="time>0" class="launch-screen">
             <div class="header">
-<!--                <div class="title">VOLKSWAGEN</div>-->
-<!--                <div class="sub-title">GROUP CHINA</div>-->
             </div>
             <div class="content">
                 <div class="title">
@@ -20,8 +18,6 @@
         <div v-if="time===0" class="launch-content">
             <nav-bar></nav-bar>
             <div class="header">
-<!--                <div class="title">VOLKSWAGEN</div>-->
-<!--                <div class="sub-title">GROUP CHINA</div>-->
                 <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
             </div>
             <div class="content">
@@ -88,6 +84,11 @@
         }, 1000)
       }
       func()
+        const {aplus_queue} = window;
+        aplus_queue&&aplus_queue.push({
+            action: 'aplus.sendPV',
+            arguments: [{is_auto: false}]
+        });
     },
     methods: {
       handleJunp() {

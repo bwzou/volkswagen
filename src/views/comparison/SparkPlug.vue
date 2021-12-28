@@ -111,7 +111,11 @@
       })
     },
     mounted() {
-
+        const {aplus_queue} = window;
+        aplus_queue&&aplus_queue.push({
+            action: 'aplus.sendPV',
+            arguments: [{is_auto: false}]
+        });
     },
     methods: {
       handleLanguage() {
