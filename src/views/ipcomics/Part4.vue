@@ -3,20 +3,24 @@
         <div class="section">
             <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
             <div v-show="lang === 'en'" style="padding-top: 50px">
-                <img src="../../assets/comics/part1/ip1-en.png" width="100%">
-                <img src="../../assets/comics/part1/ip2-en.png" width="100%">
-                <img src="../../assets/comics/part1/ip3-en.png" width="100%">
-                <img src="../../assets/comics/part1/ip4-en.png" width="100%">
-                <img src="../../assets/comics/part1/ip5-en.png" width="100%">
-                <img src="../../assets/comics/part1/ip6-en.png" width="100%">
+                <img src="../../assets/comics/part4/ip1.png" width="100%">
+                <img src="../../assets/comics/part4/ip2.png" width="100%">
+                <img src="../../assets/comics/part4/ip3.png" width="100%">
+                <img src="../../assets/comics/part4/ip4.png" width="100%">
+                <img src="../../assets/comics/part4/ip5.png" width="100%">
+                <img src="../../assets/comics/part4/ip6.png" width="100%">
+                <img src="../../assets/comics/part4/ip7.png" width="100%">
+                <img src="../../assets/comics/part4/ip8.png" width="100%">
             </div>
             <div v-show="lang === 'zh'" style="padding-top: 50px">
-                <img src="../../assets/comics/part1/ip1.png" width="100%">
-                <img src="../../assets/comics/part1/ip2.png" width="100%">
-                <img src="../../assets/comics/part1/ip3.png" width="100%">
-                <img src="../../assets/comics/part1/ip4.png" width="100%">
-                <img src="../../assets/comics/part1/ip5.png" width="100%">
-                <img src="../../assets/comics/part1/ip6.jpg" width="100%">
+                <img src="../../assets/comics/part4/ip1.png" width="100%">
+                <img src="../../assets/comics/part4/ip2.png" width="100%">
+                <img src="../../assets/comics/part4/ip3.png" width="100%">
+                <img src="../../assets/comics/part4/ip4.png" width="100%">
+                <img src="../../assets/comics/part4/ip5.png" width="100%">
+                <img src="../../assets/comics/part4/ip6.png" width="100%">
+                <img src="../../assets/comics/part4/ip7.png" width="100%">
+                <img src="../../assets/comics/part4/ip8.png" width="100%">
             </div>
         </div>
         <footer-nav></footer-nav>

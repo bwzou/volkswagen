@@ -13,7 +13,10 @@ export default {
       // pump: '水泵'
     },
     ipComics: {
-      part1: '第一期: 汽车的口罩空气滤清器'
+      part1: '第一期: 汽车的口罩空气滤清器',
+      part2: '第二期: 刹车片',
+      part3: '第三期: 雨刮器',
+      part4: '第四期: 329特大假冒气囊案件'
     }
   },
   aboutUs: {

@@ -40,6 +40,27 @@ export const routes = [
     hidden: true
   },
   {
+    path: '/ip-comics/part2',
+    component: () => import('../views/ipcomics/Part2'),
+    name: '第二部分',
+    meta: { title: '第二部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part3',
+    component: () => import('../views/ipcomics/Part3'),
+    name: '第三部分',
+    meta: { title: '第三部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part4',
+    component: () => import('../views/ipcomics/Part4'),
+    name: '第四部分',
+    meta: { title: '第四部分' },
+    hidden: true
+  },
+  {
     path: '/comparison',
     component: () => import('../views/Comparison'),
     name: '真假百科全书',

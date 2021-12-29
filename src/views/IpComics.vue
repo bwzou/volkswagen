@@ -12,6 +12,24 @@
                         {{$t("navbar.ipComics.part1")}}
                     </div>
                 </div>
+                <div class="line" @click="handleChange('/ip-comics/part2', 2)">
+                    <!--                    <img src="../assets/part/oilFilter.png">-->
+                    <div class="text">
+                        {{$t("navbar.ipComics.part2")}}
+                    </div>
+                </div>
+                <div class="line" @click="handleChange('/ip-comics/part3', 3)">
+                    <!--                    <img src="../assets/part/oilFilter.png">-->
+                    <div class="text">
+                        {{$t("navbar.ipComics.part3")}}
+                    </div>
+                </div>
+                <div class="line" @click="handleChange('/ip-comics/part4', 4)">
+                    <!--                    <img src="../assets/part/oilFilter.png">-->
+                    <div class="text">
+                        {{$t("navbar.ipComics.part4")}}
+                    </div>
+                </div>
             </div>
             <footer-nav class="footer"></footer-nav>
         </div>
