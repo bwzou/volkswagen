@@ -30,6 +30,36 @@
                         {{$t("navbar.ipComics.part4")}}
                     </div>
                 </div>
+<!--                <div class="line" @click="handleChange('/ip-comics/part5', 5)">-->
+<!--                    &lt;!&ndash;                    <img src="../assets/part/oilFilter.png">&ndash;&gt;-->
+<!--                    <div class="text">-->
+<!--                        {{$t("navbar.ipComics.part5")}}-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="line" @click="handleChange('/ip-comics/part6', 6)">
+                    <!--                    <img src="../assets/part/oilFilter.png">-->
+                    <div class="text">
+                        {{$t("navbar.ipComics.part6")}}
+                    </div>
+                </div>
+                <div class="line" @click="handleChange('/ip-comics/part7', 7)">
+                    <!--                    <img src="../assets/part/oilFilter.png">-->
+                    <div class="text">
+                        {{$t("navbar.ipComics.part7")}}
+                    </div>
+                </div>
+                <div class="line" @click="handleChange('/ip-comics/part8', 8)">
+                    <!--                    <img src="../assets/part/oilFilter.png">-->
+                    <div class="text">
+                        {{$t("navbar.ipComics.part8")}}
+                    </div>
+                </div>
+                <div class="line" @click="handleChange('/ip-comics/part9', 9)">
+                    <!--                    <img src="../assets/part/oilFilter.png">-->
+                    <div class="text">
+                        {{$t("navbar.ipComics.part9")}}
+                    </div>
+                </div>
             </div>
             <footer-nav class="footer"></footer-nav>
         </div>

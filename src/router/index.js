@@ -61,6 +61,41 @@ export const routes = [
     hidden: true
   },
   {
+    path: '/ip-comics/part5',
+    component: () => import('../views/ipcomics/Part5'),
+    name: '第五部分',
+    meta: { title: '第五部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part6',
+    component: () => import('../views/ipcomics/Part6'),
+    name: '第六部分',
+    meta: { title: '第六部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part7',
+    component: () => import('../views/ipcomics/Part7'),
+    name: '第七部分',
+    meta: { title: '第七部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part8',
+    component: () => import('../views/ipcomics/Part8'),
+    name: '第八部分',
+    meta: { title: '第八部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part9',
+    component: () => import('../views/ipcomics/Part9'),
+    name: '第九部分',
+    meta: { title: '第九部分' },
+    hidden: true
+  },
+  {
     path: '/comparison',
     component: () => import('../views/Comparison'),
     name: '真假百科全书',

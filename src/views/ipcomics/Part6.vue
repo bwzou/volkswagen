@@ -3,20 +3,20 @@
         <div class="section">
             <div class="language" @click="handleLanguage">{{lang !== 'en' ? 'EN' : 'CN'}}</div>
             <div v-show="lang === 'en'" style="padding-top: 50px">
-                <img src="../../assets/comics/part2/ip1.png" width="100%">
-                <img src="../../assets/comics/part2/ip2.png" width="100%">
-                <img src="../../assets/comics/part2/ip3.png" width="100%">
-                <img src="../../assets/comics/part2/ip4.png" width="100%">
-                <img src="../../assets/comics/part2/ip5.png" width="100%">
-                <img src="../../assets/comics/part2/ip6.png" width="100%">
+                <img src="../../assets/comics/part6/ip1.png" width="100%">
+                <img src="../../assets/comics/part6/ip2.png" width="100%">
+                <img src="../../assets/comics/part6/ip3.png" width="100%">
+                <img src="../../assets/comics/part6/ip4.png" width="100%">
+                <img src="../../assets/comics/part6/ip5.png" width="100%">
+                <img src="../../assets/comics/part6/ip6.png" width="100%">
             </div>
             <div v-show="lang === 'zh'" style="padding-top: 50px">
-                <img src="../../assets/comics/part3/ip1.png" width="100%">
-                <img src="../../assets/comics/part3/ip2.png" width="100%">
-                <img src="../../assets/comics/part3/ip3.png" width="100%">
-                <img src="../../assets/comics/part3/ip4.png" width="100%">
-                <img src="../../assets/comics/part3/ip5.png" width="100%">
-                <img src="../../assets/comics/part3/ip6.png" width="100%">
+                <img src="../../assets/comics/part6/ip1.png" width="100%">
+                <img src="../../assets/comics/part6/ip2.png" width="100%">
+                <img src="../../assets/comics/part6/ip3.png" width="100%">
+                <img src="../../assets/comics/part6/ip4.png" width="100%">
+                <img src="../../assets/comics/part6/ip5.png" width="100%">
+                <img src="../../assets/comics/part6/ip6.png" width="100%">
             </div>
         </div>
         <footer-nav></footer-nav>
@@ -28,7 +28,7 @@
   import FooterNav from '../../components/Footer/index'
 
   export default {
-    name: "Part3",
+    name: "part6",
     components: {
       FooterNav
     },

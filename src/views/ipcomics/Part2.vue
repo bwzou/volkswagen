@@ -28,7 +28,7 @@
   import FooterNav from '../../components/Footer/index'
 
   export default {
-    name: "Part1",
+    name: "Part2",
     components: {
       FooterNav
     },
