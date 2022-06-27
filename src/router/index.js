@@ -96,6 +96,69 @@ export const routes = [
     hidden: true
   },
   {
+    path: '/ip-comics/part10',
+    component: () => import('../views/ipcomics/Part10'),
+    name: '第十部分',
+    meta: { title: '第十部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part11',
+    component: () => import('../views/ipcomics/Part11'),
+    name: '第十一部分',
+    meta: { title: '第十一部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part12',
+    component: () => import('../views/ipcomics/Part12'),
+    name: '第十二部分',
+    meta: { title: '第十二部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part13',
+    component: () => import('../views/ipcomics/Part13'),
+    name: '第十三部分',
+    meta: { title: '第十三部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part14',
+    component: () => import('../views/ipcomics/Part14'),
+    name: '第十四部分',
+    meta: { title: '第十四部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part15',
+    component: () => import('../views/ipcomics/Part15'),
+    name: '第十五部分',
+    meta: { title: '第十五部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part16',
+    component: () => import('../views/ipcomics/Part16'),
+    name: '第十六部分',
+    meta: { title: '第十六部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part17',
+    component: () => import('../views/ipcomics/Part17'),
+    name: '第十七部分',
+    meta: { title: '第十七部分' },
+    hidden: true
+  },
+  {
+    path: '/ip-comics/part18',
+    component: () => import('../views/ipcomics/Part18'),
+    name: '第十八部分',
+    meta: { title: '第十八部分' },
+    hidden: true
+  },
+  {
     path: '/comparison',
     component: () => import('../views/Comparison'),
     name: '真假百科全书',
